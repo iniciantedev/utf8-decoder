@@ -38,10 +38,10 @@ return 0;
 int main()
 {
     //const unsigned char c[] = {0xC3, 0xA7, 0};
-    const unsigned char* c = (const unsigned char*) "็";
+    const unsigned char* c = (const unsigned char*) "รง";
 
     unsigned int cp = 0;
     int retorno = char_decode(c, &cp);
-    printf("value U+%u\n size %d bytes\n", cp, retorno);
+    printf("value U+%x\n size %d bytes\n", cp, retorno);
     return 0;
 }
